@@ -18,6 +18,14 @@
 """
 
 # API Dependencies
+import subprocess
+import sys
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+install('folium')
+install('pygeohash')
+install('xgboost')
+install('lightgbm')
 import pickle
 import json
 import numpy as np
