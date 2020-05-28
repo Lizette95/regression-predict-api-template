@@ -25,8 +25,8 @@ import numpy as np
 # Load data from file to send as an API POST request.
 # We prepare a DataFrame with the public test set + riders data
 # from the Zindi challenge.
-test = pd.read_csv('https://raw.githubusercontent.com/Lizette95/regression-predict-api-template/master/utils/data/Test.csv')
-riders = pd.read_csv('https://raw.githubusercontent.com/Lizette95/regression-predict-api-template/master/utils/data/Riders.csv')
+test = pd.read_csv('data/Test.csv')
+riders = pd.read_csv('data/Riders.csv')
 test = test.merge(riders, how='left', on='Rider Id')
 
 # Convert our DataFrame to a JSON string.

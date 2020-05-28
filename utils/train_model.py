@@ -22,8 +22,8 @@ from sklearn.preprocessing import LabelEncoder, OneHotEncoder, StandardScaler
 
 #### Load Data
 # Fetch training data and preprocess for modeling
-train_df = pd.read_csv('https://raw.githubusercontent.com/Lizette95/regression-predict-api-template/master/utils/data/Train.csv')
-riders = pd.read_csv('https://raw.githubusercontent.com/Lizette95/regression-predict-api-template/master/utils/data/Riders.csv')
+train_df = pd.read_csv('data/Train.csv')
+riders = pd.read_csv('data/Riders.csv')
 # Merge datasets
 train_data = pd.merge(train_df,riders,on='Rider Id',how='left')
 # Rename columns

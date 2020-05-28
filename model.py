@@ -57,8 +57,8 @@ def _preprocess_data(data):
     # ------------------------------------------------------------------------
     #### Load Data
     # Fetch data and preprocess for modeling
-    train_data = pd.read_csv('https://raw.githubusercontent.com/Lizette95/regression-predict-api-template/master/utils/data/Train.csv')
-    riders = pd.read_csv('https://raw.githubusercontent.com/Lizette95/regression-predict-api-template/master/utils/data/Riders.csv')
+    train_data = pd.read_csv('utils/data/Train.csv')
+    riders = pd.read_csv('utils/data/Riders.csv')
     # Rename columns
     test_data.columns = [column.replace("Of","of") for column in test_data.columns]
     test_data.columns = [column.replace("_"," ") for column in test_data.columns]
