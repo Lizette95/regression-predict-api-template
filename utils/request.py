@@ -4,13 +4,6 @@
 
     Author: Explore Data Science Academy.
 
-    Note:
-    ---------------------------------------------------------------------
-    Plase follow the instructions provided within the README.md file
-    located at the root of this repo for guidance on how to use this
-    script correctly.
-    ----------------------------------------------------------------------
-
     Description: This file contains code used to formulate a POST request
     which can be used to develop/debug the Model API once it has been
     deployed.
@@ -38,7 +31,7 @@ feature_vector_json = test.iloc[1].to_json()
 # replace the URL below with its public IP:
 
 # url = 'http://{public-ip-address-of-remote-machine}:5000/api_v0.1'
-url = 'http://34.246.135.61:5000/api_v0.1'
+url = 'http://52.211.18.201:5000/api_v0.1'
 
 # Perform the POST request.
 print(f"Sending POST request to web server API at: {url}")

@@ -22,8 +22,6 @@ import subprocess
 import sys
 def install(package):
     subprocess.check_call([sys.executable, "-m", "pip", "install", package])
-install('pygeohash')
-install('xgboost')
 install('lightgbm')
 import pickle
 import json
@@ -37,7 +35,7 @@ app = Flask(__name__)
 # Load our model into memory.
 # Please update this path to reflect your own trained model.
 static_model = load_model(
-    path_to_model='assets/trained-models/test.pkl')
+    path_to_model='assets/trained-models/Team19_JHB_model.pkl')
 
 print ('-'*40)
 print ('Model succesfully loaded')
